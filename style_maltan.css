@@ -24,7 +24,7 @@ p {
 
 .container {
     margin: auto;
-    max-width: 1100px;
+    max-width: 1500px;
     overflow: auto;
     padding: 0 20px;
 }
@@ -138,8 +138,8 @@ p {
 }
 
 #showcase {
-    background: url('./hand.jpeg') no-repeat center center/cover;
-    height: 600px;
+    background: url('./images/hand.jpeg') no-repeat center center/cover;
+    height: 800px;
 }
 
 #showcase .showcase-content {
@@ -147,6 +147,60 @@ p {
     text-align: center;
     padding-top: 170px;
 }
+
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+}
+
+#showcase .showcase-content p {
+    padding-bottom: 20px;
+    line-height: 1.7em;
+}
+
+#home-info {
+    height: 400px;
+}
+
+#home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url('./images/boy.jpeg') center center no-repeat;
+    min-height: 100%;
+}
+
+#home-info .info-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 100px 30px;
+    overflow: hidden;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+    width: 33.3%;
+    height: 350px;
+    text-align: center;
+}
+
+.box i {
+    margin-bottom: 10px;
+}
+
+#main-footer {
+    text-align: center;
+    background: #444;
+    color: #fff;
+    padding: 20px;
+}
+
+
+
 
 
 
