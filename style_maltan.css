@@ -199,6 +199,95 @@ p {
     padding: 20px;
 }
 
+/*About info*/
+/*#about-info .info-right {*/
+/*    float: right;*/
+/*    width: 50%;*/
+/*    min-height: 100%;*/
+/*}*/
+
+/*#about-info .info-right img {*/
+/*    display: block;*/
+/*    margin: auto;*/
+/*    width: 70%;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+/*#about-info .info-left {*/
+/*    float: left;*/
+/*    width: 50%;*/
+/*    min-height: 100%;*/
+/*}*/
+
+#about-info .container {
+    display: flex;
+}
+
+#about-info .info-left {
+    width: 60%;
+}
+
+#about-info .info-right {
+    width: 40%;
+    text-align: center;
+}
+
+#about-info .info-right img {
+    width: 70%;
+    border-radius: 50%;
+    margin: 30px;
+}
+
+/* Testimonials */
+#testimonials {
+    height: 600px;
+    background: url('./images/prints.jpeg') no-repeat center center/cover;
+    padding-top: 100px;
+}
+
+#testimonials h2 {
+    color: #333;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#testimonials .testimonial {
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    opacity: 0.6;
+}
+
+.testimonial .img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.testimonial:first-child .img {
+    background: url('./images/Kat.jpeg') no-repeat center center/cover;
+}
+
+.testimonial:nth-child(2) .img {
+    background: url('./images/Yev.jpeg') no-repeat center center/cover;
+}
+
+.testimonial:nth-child(3) .img {
+    background: url('./images/Greg.jpeg') no-repeat center center/cover;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
