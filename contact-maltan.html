@@ -21,7 +21,79 @@
     </nav>
 </header>
 
+<div class="formAndPic container">
+<section id="contact-form" class="py-3">
+    <div class="">
+        <h1 class="l-heading"><span class="text-primary">Contact</span> Us</h1>
+        <p>Please fill out the form below to contact us</p>
+        <form action="process.php">
+            <div class="form-group">
+<!--                <label for="name">Name</label>-->
+<!--                <input type="text" name="name" id="name">-->
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
 
+            <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+
+            <div class="form-group">
+                <label for="dog">Choose a Dog</label>
+                <select id="dog" name="dog">
+                    <option value="maltese">Maltese</option>
+                    <option value="chihuahua">Chihuahua</option>
+                    <option value="beagle">Beagle</option>
+                    <option value="terrier">Terrier</option>
+                    <option value="spaniel">Spaniel</option>
+                    <option value="spitz">Spitz</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Your e-mail">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Write a massage.."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</section>
+
+<section id="contact-pic" class="info-right">
+    <img src="./images/contact.webp" alt="picture">
+</section>
+</div>
+
+<section id="contact-info" class="bg-dark">
+    <div class="container">
+        <div class="box">
+            <i class="fas fa-paw fa-3x"></i>
+            <h3>Location</h3>
+            <p>The Main Street, Rotterdam</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-phone fa-3x"></i>
+            <h3>Phone Number</h3>
+            <p>(111) 555-5555</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-envelope fa-3x"></i>
+            <h3>Email Address</h3>
+            <p>maltese@border.nl</p>
+        </div>
+    </div>
+</section>
+
+<footer id="main-footer">
+    <p>Maltese Kennel &copy; 2021, All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
