@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="carusel.css">
+    <title>Carusel</title>
+</head>
+<body>
+
+<div class="carousel">
+    <button class="carousel_button">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    </button>
+    <div class="carousel_track-container">
+        <ul class="carousel_track">
+            <li class="carousel_slide">
+                <img class="carousel_image" src="./images/buldog2.jpeg" alt="First pic">
+            </li>
+            <li class="carousel_slide">
+                <img class="carousel_image" src="./images/1Dog.jpeg" alt="Second pic">
+            </li>
+            <li class="carousel_slide">
+                <img class="carousel_image" src="./images/1bigDog.jpeg" alt="Third pic">
+            </li>
+        </ul>
+    </div>
+    <button class="carousel_button">
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </button>
+
+    <div class="carousel_nav">
+        <button class="carousel_indicator current-slide"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+    </div>
+</div>
+
+<script src="./carusel.js"></script>
+</body>
+</html>
