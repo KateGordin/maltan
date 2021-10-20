@@ -19,13 +19,26 @@ const setSlidePosition = (slide, index) => {
 };
 slides.forEach(setSlidePosition);
 
+const moveToSlide = (track, currentSlide, targetSlide) => {
+  track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+  currentSlide.classList.remove('current-slide');
+  targetSlide.classList.add('current-slide');
+}
+
 
 // when I click right, move slides to the right
-console.log(nextButton);
+// console.log(nextButton);
 nextButton.addEventListener('click', e => {
-  const currentSlide = track.querySelector('.current-Slide');
-  console.log(currentSlide);
-  // move the slide
+  const currentSlide = track.querySelector('.current-slide');
+  const nextSlide = currentSlide.nextElementSibling;
+  // const amountToMove = nextSlide.style.left;
+
+  // move to the next slide
+// track.style.transform = 'translateX(-' + amountToMove + ')';
+// currentSlide.classList.remove('current-slide');
+// nextSlide.classList.add('current-slide');
+
+  moveToSlide(track, currentSlide, nextSlide);
 
 })
 
