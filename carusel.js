@@ -25,6 +25,13 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
   targetSlide.classList.add('current-slide');
 }
 
+// when I click left, move slides to the left
+prevButton.addEventListener('click', e => {
+  const currentSlide = track.querySelector('.current-slide');
+  const prevSlide = currentSlide.previousElementSibling;
+
+  moveToSlide(track, currentSlide, prevSlide);
+});
 
 // when I click right, move slides to the right
 // console.log(nextButton);
@@ -39,6 +46,13 @@ nextButton.addEventListener('click', e => {
 // nextSlide.classList.add('current-slide');
 
   moveToSlide(track, currentSlide, nextSlide);
+});
 
-})
+// when I click the nav indicators, move to that slide
+dotsNav.addEventListener('click', e => {
+  // what indicator was clicked on?
+  const targetDot = e.target;
+
+  console.log(e.target);
+});
 

@@ -54,7 +54,7 @@
 }
 
 .carousel_nav {
-    /*background: pink;*/
+    background: pink;
     display: flex;
     justify-content: center;
     padding: 10px 0;
